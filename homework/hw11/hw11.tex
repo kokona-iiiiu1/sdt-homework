@@ -1,0 +1,29 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsmath}
+\usepackage{listings}
+\begin{document}
+\section{列表练习}
+无序列表：
+\begin{itemize}
+\item 第一项
+\item 第二项
+\end{itemize}
+有序列表：
+\begin{enumerate}
+\item 第一步
+\item 第二步
+\end{enumerate}
+
+\section{代码块}
+\begin{lstlisting}[language=C++]
+#include <iostream>
+int main() { return 0; }
+\end{lstlisting}
+
+\section{公式}
+求根公式 \eqref{eq:quad}：
+\begin{equation}
+x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+\label{eq:quad}
+\end{equation}
+\end{document}
