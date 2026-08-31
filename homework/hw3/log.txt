@@ -1,0 +1,5 @@
+INFO:server started
+ERROR:disk full
+info:request ok
+error:timeout
+WARNING:low memory
