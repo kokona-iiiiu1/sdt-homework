@@ -1,0 +1,38 @@
+\documentclass{article}       % 文档类型：article（文章）
+\usepackage{amsmath}          % 数学宏包：提供公式环境、\eqref 等命令
+\usepackage{ctex}             % 中文支持（配合 XeLaTeX 引擎，让"姓名—学号"能显示中文）
+\begin{document}              % 正文开始（前面是"前言区"，这里是"正文区"）
+
+\title{Tool Report}
+\author{姓名—学号}            % ← 改成你自己的姓名和学号
+\maketitle                    % 根据上面的 title/author 生成标题
+
+\section{Result}
+
+% ── ① 带编号+label 的公式，正文用 \eqref 引用 ──
+Formula \eqref{eq:mode} shows the rule for choosing the mode. %eref引用
+\begin{equation}
+    \text{mode} =
+    \begin{cases}
+        \text{safe} & \text{if config is safe} \\
+        \text{fast} & \text{otherwise}
+    \end{cases}
+    \label{eq:mode}
+\end{equation}
+
+% ── ② 2行2列表格，caption + label，正文用 \ref 引用 ──
+Table \ref{tab:config} lists the fields of the modified config file. %ref正文引用表格
+\begin{table}[h]
+    \centering
+    \caption{Config fields after merge}  %自动编号表标题
+    \label{tab:config} %给表格起名
+    \begin{tabular}{|c|c|} %画竖线
+        \hline %横线
+        mode & safe \\
+        \hline
+        note & reviewed \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\end{document}               % 正文结束
