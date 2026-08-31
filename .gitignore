@@ -1,0 +1,19 @@
+# ===== LaTeX 编译产物（不提交）=====
+*.aux
+*.log
+*.pdf
+*.xdv
+*.synctex
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.toc
+*.out
+
+# 课后练习（homework/）里的 .log 是练习数据文件，需要提交，不忽略
+!homework/**/*.log
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+desktop.ini
