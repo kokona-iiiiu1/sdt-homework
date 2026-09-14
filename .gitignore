@@ -41,3 +41,6 @@ v2/
 # q14 构建产物（由 Makefile 生成，不提交）
 classwork/q14/stats.txt
 classwork/q14/report.txt
+
+# C 构建产物
+*.exe
