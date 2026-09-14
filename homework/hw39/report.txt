@@ -1,0 +1,2 @@
+lines/words:
+ 3  6 fetched.txt
