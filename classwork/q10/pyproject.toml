@@ -1,0 +1,10 @@
+[build-system]                       # 告诉"谁来负责构建"这一节
+requires = ["setuptools>=68"]        # 构建时需要 setuptools（版本 ≥68）
+build-backend = "setuptools.build_meta"  # 用 setuptools 的 build_meta 当后端
+
+[project]                            # 描述"这个包叫什么"
+name = "greetlab-25040031018"        # 包的名字（发布名，可和导入名不同）
+version = "0.1.0"                    # 版本号
+
+[project.scripts]                    # 关键：把函数"注册成一条命令"
+sdt-greet = "greetlab.cli:main"      # 敲 sdt-greet → 调用 greetlab 包 cli 模块的 main()
