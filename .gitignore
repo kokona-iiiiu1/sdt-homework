@@ -37,3 +37,7 @@ v2/
 
 # VS Code 工作区设置（本地解释器配置，不提交）
 .vscode/
+
+# q14 构建产物（由 Makefile 生成，不提交）
+classwork/q14/stats.txt
+classwork/q14/report.txt
