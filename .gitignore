@@ -17,3 +17,22 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# 实验报告成品 PDF 要提交，不忽略
+!report1.pdf
+!report.pdf
+
+# ===== Python 环境与构建/运行产物（不提交）=====
+.venv/
+_clean/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+unpacked/
+v2/
+
+# VS Code 工作区设置（本地解释器配置，不提交）
+.vscode/
