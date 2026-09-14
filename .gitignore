@@ -26,6 +26,7 @@ desktop.ini
 .venv/
 _clean/
 __pycache__/
+.ruff_cache/
 *.pyc
 .pytest_cache/
 *.egg-info/
